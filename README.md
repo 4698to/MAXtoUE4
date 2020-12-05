@@ -4,7 +4,7 @@
 
 [B站视频-3dsMAX 发送到UE4](https://www.bilibili.com/video/BV1T5411b7jW/)
 
-![](https://github.com/4698to/MAXtoUE4/raw/master/img/003/03/02-1600739755429.png)
+![](https://github.com/4698to/MAXtoUE4/raw/main/img/003/03/02-1600739755429.png)
 
 在3ds MAX 中把模型和动画直接一键发送到 ue4 引擎中，原理也很简单，就是利用unreal.python操作导入FBX。
 
@@ -24,7 +24,7 @@
 *    Skeleton asset： 接受动画的骨架文件 Skeleton ssset 编辑器路径
 *    导出保存文件夹 FBX ： 3dsMAX 导出FBX的临时路径
 
-![](https://github.com/4698to/MAXtoUE4/raw/master/img/003/03/008-1603177073524.png)
+![](https://github.com/4698to/MAXtoUE4/raw/main/img/003/03/008-1603177073524.png)
 
 ---
 
@@ -38,11 +38,11 @@
 
 ### 1    -  将下载的zip解压，然后把和你使用的3dsMAX 对应版本的MaxSendUnreal 文件夹复制到 D:\Program Files\Autodesk\3ds Max 2015\scripts  路径下（注意你自己的MAX安装路径），如下图
 
-![](https://github.com/4698to/MAXtoUE4/raw/master/img/003/03/02-1599098593595.png)
+![](https://github.com/4698to/MAXtoUE4/raw/main/img/003/03/02-1599098593595.png)
 
 ### 2   -   将 3dsMaxSendUnreal_menu_v1.ms 直接拖进MAX中运行
 
-![](https://github.com/4698to/MAXtoUE4/raw/master/img/003/03/02-1599098740582.png)
+![](https://github.com/4698to/MAXtoUE4/raw/main/img/003/03/02-1599098740582.png)
 
 ----
 
@@ -50,15 +50,15 @@
 
 一定要如下设置，否则无法使用，还会让3ds MAX 崩溃掉。
 
-![](https://github.com/4698to/MAXtoUE4/raw/master/img/003/03/02-1599099100745.png)
+![](https://github.com/4698to/MAXtoUE4/raw/main/img/003/03/02-1599099100745.png)
 
-![](https://github.com/4698to/MAXtoUE4/raw/master/img/003/03/02-1599099155765.png)
+![](https://github.com/4698to/MAXtoUE4/raw/main/img/003/03/02-1599099155765.png)
 
 如上设置后需要重启 UE4 。
 
-![](https://github.com/4698to/MAXtoUE4/raw/master/img/003/03/02-1599099256516.png)
+![](https://github.com/4698to/MAXtoUE4/raw/main/img/003/03/02-1599099256516.png)
 
-![](https://github.com/4698to/MAXtoUE4/raw/master/img/003/03/02-1599099287756.png)
+![](https://github.com/4698to/MAXtoUE4/raw/main/img/003/03/02-1599099287756.png)
 
 
 ----
@@ -66,11 +66,11 @@
 ## 3. 使用
 
 
-![](https://github.com/4698to/MAXtoUE4/raw/master/img/003/03/02-1600739884397.png)
+![](https://github.com/4698to/MAXtoUE4/raw/main/img/003/03/02-1600739884397.png)
 
 
 
-![](https://github.com/4698to/MAXtoUE4/raw/master/img/003/03/02-1599100023419.png)
+![](https://github.com/4698to/MAXtoUE4/raw/main/img/003/03/02-1599100023419.png)
 
 ## 1.0.1 更新
 
@@ -84,17 +84,17 @@
 
 *   发送 骨架模型 要选择蒙皮模型和骨骼； 发送 动画 只选择骨骼（先指定骨架文件）
 
-![](https://github.com/4698to/MAXtoUE4/raw/master/img/003/03/02-1600742087966.png)
+![](https://github.com/4698to/MAXtoUE4/raw/main/img/003/03/02-1600742087966.png)
 
 *   导入动画 需要填上 骨架 文件路径，如下图中
 
 在UE4编辑器中选中你的骨架文件 Skeletal asset，右键菜单中 选择复制引用 Copy Reference ，然后黏贴进来即可 ；没有指定骨架，无法发送动画。
 
-![](https://github.com/4698to/MAXtoUE4/raw/master/img/003/03/02-1599100232981.png)
+![](https://github.com/4698to/MAXtoUE4/raw/main/img/003/03/02-1599100232981.png)
 
 *   如果MAX文件没有保存，没有文件名，无法导出FBX和发送。也可以自行修改 FbxExporter_struat.ms 中的导出文件名相关函数。
 
-![](https://github.com/4698to/MAXtoUE4/raw/master/img/003/03/02-1600740221629.png)
+![](https://github.com/4698to/MAXtoUE4/raw/main/img/003/03/02-1600740221629.png)
 
 *   发送骨架模型和发送动画，注意MAX文件名，如果在同一个文件里导出骨架模型和动画，最后一次发送将会覆盖上一次发送的结果。
 
@@ -105,14 +105,14 @@
 * 发送动画UE4中的结果： 动画文件 0001_1000_00
 
 发送骨架也是这个文件名的FBX，发送动画同样也是， 这样后面发送的动画将会覆盖前面发送的模型。
-![](https://github.com/4698to/MAXtoUE4/raw/master/img/003/03/02-1600741643574.png)
+![](https://github.com/4698to/MAXtoUE4/raw/main/img/003/03/02-1600741643574.png)
 
 看上图虽然文件名是一样的，但是并没有覆盖，因为我设置了单独保存动画的 Animation 文件夹，
 但是动画FBX文件还是覆盖了模型FBX，如果你模型文件夹和动画文件夹设置的是同一路径，那不止是FBX被覆盖，连UE4中的模型文件同样也被动画文件覆盖。
 
 这个重名FBX发送问题，在不同版本MAX中有不同表现，至少我在MAX2019 中测试，骨架模型和动画重名的FBX，后操作的无法发送成功，在 MAX2015 中则可以发送。
 
-![](https://github.com/4698to/MAXtoUE4/raw/master/img/003/03/02-1600741868846.png)
+![](https://github.com/4698to/MAXtoUE4/raw/main/img/003/03/02-1600741868846.png)
 
 # 下载
 
@@ -139,6 +139,6 @@
 
 如果觉的工具好用，欢迎捐赠以示支持，让洒家有动力更新啊
 
-![](https://github.com/4698to/MAXtoUE4/raw/master/img/1516971249924.jpg)
+![](https://github.com/4698to/MAXtoUE4/raw/main/img/1516971249924.jpg)
 
 
